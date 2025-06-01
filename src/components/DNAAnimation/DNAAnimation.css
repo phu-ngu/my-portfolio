@@ -1,0 +1,46 @@
+.dna-animation {
+  position: fixed;
+  top: 5rem;
+  left: 1.5rem;
+  z-index: 40;
+  opacity: 0.3;
+}
+
+.dna-strand1 {
+  animation: dna-rotate1 4s ease-in-out infinite;
+}
+
+.dna-strand2 {
+  animation: dna-rotate2 4s ease-in-out infinite;
+}
+
+.base-pairs {
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes dna-rotate1 {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes dna-rotate2 {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
