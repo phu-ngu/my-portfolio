@@ -1,8 +1,8 @@
 export const projectsData = [
   {
-    title: "Genomic Variant Analysis Pipeline",
+    title: "Personal Website",
     description: "A comprehensive pipeline for analyzing genomic variants from whole-genome sequencing data. Includes quality control, variant calling, annotation, and population genetics analysis.",
-    tech: ["Python", "Snakemake", "GATK", "R"],
+    tech: ["Web Development"],
     image: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=500&h=300&fit=crop",
     link: "#"
   },

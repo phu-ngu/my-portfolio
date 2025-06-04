@@ -10,7 +10,7 @@ export default function Navigation({ activeSection, scrollToSection }) {
             Portfolio
           </div>
           <div className="navigation-links">
-            {['home', 'projects', 'contact'].map((section) => (
+            {['home', 'about', 'projects', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}

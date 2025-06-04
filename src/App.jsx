@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ContactForm, ContactLinks, DNAAnimation, Footer, HeroSection, Nav, ProjectCard } from './components'
-import { ContactSection, ProjectsSection } from './containers'
+import { DNAAnimation, Footer, Nav } from './components'
+import { ContactSection, ProjectsSection, HeroSection, Profile } from './containers'
 import './App.css';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -39,6 +39,7 @@ export default function App() {
         scrollToSection={scrollToSection} 
       />
       <HeroSection scrollToSection={scrollToSection} />
+      <Profile />
       <ProjectsSection />
       <ContactSection />
       <Footer />

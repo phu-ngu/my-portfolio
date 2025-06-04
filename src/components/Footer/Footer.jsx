@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <p className="footer__text">
-          &copy; 2025 Phu Nguyen. Aspiring Developer.
+          &copy; 2025 All rights reserved | Created via React
         </p>
       </div>
     </footer>

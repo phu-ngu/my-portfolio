@@ -8,10 +8,10 @@ export default function ContactSection() {
     <section id="contact" className="contact-section">
       <div className="contact-section__container">
         <h2 className="contact-section__title">
-          Let's Collaborate
+          Contact
         </h2>
         <p className="contact-section__description">
-          I'm always interested in new research opportunities and collaborative projects. 
+          Let me get to know more about you!
         </p>
         
         <ContactLinks />

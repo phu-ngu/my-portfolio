@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { projectsData } from '../../data/projectsData';
 import './ProjectsSection.css';
+import { ChevronDown } from 'lucide-react';
 
 export default function ProjectsSection() {
   return (
@@ -21,6 +22,10 @@ export default function ProjectsSection() {
             <ProjectCard key={index} project={project} />
           ))}
         </div>
+      </div>
+
+      <div className='projects-section__scroll-indicator'>
+        <ChevronDown className='projects-section__scroll-icon'/>
       </div>
     </section>
   );

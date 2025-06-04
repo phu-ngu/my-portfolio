@@ -5,7 +5,7 @@ import './ContactLinks.css';
 const contactLinks = [
   {
     icon: Mail,
-    title: 'Email',
+    title: 'Email Me At',
     value: 'nphuey@gmail.com',
     href: 'mailto:nphuey@gmail.com'
   },
@@ -17,7 +17,7 @@ const contactLinks = [
   },
   {
     icon: Linkedin,
-    title: 'LinkedIn',
+    title: "Let's Connect",
     value: 'Phu Nguyen',
     href: 'https://linkedin.com'
   }

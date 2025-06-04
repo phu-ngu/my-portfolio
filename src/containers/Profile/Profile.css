@@ -1,0 +1,88 @@
+.profile {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.profile__background {
+  position: absolute;
+  inset: 0;
+  background: white;
+}
+
+.profile__intro {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  flex-direction: row-reverse;
+}
+
+.profile__title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: #1c2a3d;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.profile__image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .profile__title {
+    font-size: 6rem;
+  }
+}
+
+.profile__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .profile__subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+
+.profile__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1s infinite;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.profile__scroll-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #9ca3af;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-0.5rem);
+  }
+}

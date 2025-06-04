@@ -54,3 +54,28 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.projects-section__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1s infinite;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.projects-section__scroll-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #9ca3af;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-0.5rem);
+  }
+}
