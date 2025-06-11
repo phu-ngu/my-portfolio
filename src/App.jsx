@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DNAAnimation, Footer, Nav } from './components'
-import { ContactSection, ProjectsSection, HeroSection, Profile } from './containers'
+import { ContactSection, ProjectsSection, HeroSection, Timeline, TimelineEdu, Profile } from './containers'
 import './App.css';
 
 export default function App() {
@@ -41,6 +41,8 @@ export default function App() {
       <HeroSection scrollToSection={scrollToSection} />
       <Profile />
       <ProjectsSection />
+      <Timeline />
+      <TimelineEdu />
       <ContactSection />
       <Footer />
     </div>

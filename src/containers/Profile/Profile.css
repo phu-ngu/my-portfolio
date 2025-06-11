@@ -1,66 +1,79 @@
 .profile {
+  max-width: 600px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding: 40px 20px;
   position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 
-.profile__background {
-  position: absolute;
-  inset: 0;
-  background: white;
-}
-
-.profile__intro {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 15rem;
-  flex-direction: row-reverse;
+.profile__label {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.2s forwards;
 }
 
 .profile__title {
-  font-size: 3.75rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  background: #1c2a3d;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.4s forwards;
 }
 
-.profile__image img {
+.profile__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.6s forwards;
+  position: relative;
+}
+
+.profile__image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 15px;
-  display: block;
+  border: 3px solid grey;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
-@media (min-width: 768px) {
-  .profile__title {
-    font-size: 6rem;
-  }
+.profile__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
 }
 
-.profile__subtitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: black;
-  margin-bottom: 2rem;
+.profile__text {
+  flex: 1;
+  color: #b8b8b8;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-left: -25px;
+  padding-left: 35px;
+  position: relative;
+  margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-  .profile__subtitle {
-    font-size: 1.875rem;
-  }
+.highlight {
+  color: #ffffff;
+  font-weight: 400;
 }
-
 
 .profile__scroll-indicator {
   position: absolute;
@@ -76,6 +89,52 @@
   width: 1.5rem;
   height: 1.5rem;
   color: #9ca3af;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .profile__title {
+    font-size: 36px;
+  }
+  
+  .profile__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .profile__text {
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .profile__image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes bounce {

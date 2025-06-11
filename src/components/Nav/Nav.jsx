@@ -7,7 +7,7 @@ export default function Navigation({ activeSection, scrollToSection }) {
       <div className="navigation-container">
         <div className="navigation-content">
           <div className="navigation-logo">
-            Portfolio
+            Displace this with logo
           </div>
           <div className="navigation-links">
             {['home', 'about', 'projects', 'contact'].map((section) => (

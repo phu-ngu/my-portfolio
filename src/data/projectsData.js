@@ -7,17 +7,17 @@ export const projectsData = [
     link: "#"
   },
   {
-    title: "Protein Structure Prediction ML Model",
-    description: "Machine learning model for predicting protein secondary structure from amino acid sequences using deep neural networks and attention mechanisms.",
-    tech: ["TensorFlow", "Python", "BioPython", "DSSP"],
-    image: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=500&h=300&fit=crop",
+    title: "Renaming Hamilton's Labware Metadata",
+    description: "A tool for renaming and organizing labware metadata in Hamilton's lab automation systems, improving data consistency and accessibility.",
+    tech: ["Python", "Data Management", "Hamilton Robotics"],
+    image: "https://images.unsplash.com/photo-1603035466412-4a1c9f0e7f6b?w=500&h=300&fit=crop",
     link: "#"
   },
   {
-    title: "Phylogenetic Tree Visualization Tool",
-    description: "Interactive web application for visualizing and analyzing phylogenetic trees with support for large datasets and multiple tree formats.",
-    tech: ["D3.js", "JavaScript", "Python", "Newick"],
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+    title: "Hamilton's Robotics Metadata Web Application",
+    description: "A web application to display Hamilton's Metadata in a user-friendly format, allowing for easy access and management of labware information.",
+    tech: ["Web Development", "Data Visualization"],
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop",
     link: "#"
   }
 ];
