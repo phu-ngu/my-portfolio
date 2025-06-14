@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { DNAAnimation, Footer, Nav } from './components'
+import { Footer, Nav } from './components'
 import { ContactSection, ProjectsSection, HeroSection, Timeline, TimelineEdu, Profile } from './containers'
 import './App.css';
+import my_logo from './assets/images/logo_pn_200x200.png';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,7 +34,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <DNAAnimation />
+      <img src={my_logo} alt='logo' className='mylogo'/>
       <Nav 
         activeSection={activeSection} 
         scrollToSection={scrollToSection} 

@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactLinks from '../../components/ContactLinks/ContactLinks';
-import ContactForm from '../../components/ContactForm/ContactForm';
 import './ContactSection.css';
 
 export default function ContactSection() {
@@ -15,7 +14,7 @@ export default function ContactSection() {
         </p>
         
         <ContactLinks />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </section>
   );

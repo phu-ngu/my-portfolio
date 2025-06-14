@@ -16,8 +16,16 @@ export const projectsData = [
   {
     title: "Hamilton's Robotics Metadata Web Application",
     description: "A web application to display Hamilton's Metadata in a user-friendly format, allowing for easy access and management of labware information.",
-    tech: ["Web Development", "Data Visualization"],
+    tech: ["Web Development", "React.js", "Data Visualization"],
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop",
+    link: "#"
+  },
+  // Add more projects as needed
+  {
+    title: "Survey Request App",
+    description: "A web application for managing survey requests, allowing client users to submit problems to the Automation team.",
+    tech: ["Full Stack", "React.js", "Node.js", "Express.js", "API Development"],
+    image: "Add image here",
     link: "#"
   }
 ];

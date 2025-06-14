@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.mylogo {
+  position: fixed;
+  top: 5rem;
+  left: 1.5rem;
+  z-index: 40;
+  opacity: 0.8;
+  width: 5rem;
+  height: auto;
+}
