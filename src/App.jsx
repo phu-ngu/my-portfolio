@@ -43,7 +43,6 @@ export default function App() {
       <Profile />
       <ProjectsSection />
       <Timeline />
-      <TimelineEdu />
       <ContactSection />
       <Footer />
     </div>

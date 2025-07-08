@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import profileImage from '../../assets/images/profilepic.jpg'
 import './Profile.css';
+import { SkillBar } from '../../components'
 
 export default function Profile() {
   return (
@@ -22,6 +23,7 @@ export default function Profile() {
       <div className='profile__scroll-indicator'>
         <ChevronDown className='profile__scroll-icon'/>
       </div>
+      <SkillBar skill="Python" percentage={85} />
     </section>
   );
 }

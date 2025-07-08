@@ -27,6 +27,9 @@ export default function ProjectsSection() {
       <div className='projects-section__scroll-indicator'>
         <ChevronDown className='projects-section__scroll-icon'/>
       </div>
+      <div>
+        
+      </div>
     </section>
   );
 }
