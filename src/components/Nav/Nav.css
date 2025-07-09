@@ -57,3 +57,8 @@
   color: #2563eb;
   border-bottom: 2px solid #2563eb;
 }
+
+.navigation-logo {
+  height: auto;
+  width: 10%;
+}

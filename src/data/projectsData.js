@@ -1,3 +1,4 @@
+import form_img from '../assets/images/form_request.png';
 export const projectsData = [
   {
     title: "Personal Website",
@@ -22,10 +23,10 @@ export const projectsData = [
   },
   // Add more projects as needed
   {
-    title: "Survey Request App",
-    description: "A web application for managing survey requests, allowing client users to submit problems to the Automation team.",
+    title: "Form Request App",
+    description: "A web application for managing form requests, allowing client users to submit problems to the Automation team.",
     tech: ["Full Stack", "React.js", "Node.js", "Express.js", "API Development"],
-    image: "Add image here",
+    image: form_img,
     link: "#"
   }
 ];
