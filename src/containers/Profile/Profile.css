@@ -1,25 +1,40 @@
 .profile {
-  max-width: 600px;
-  text-align: center;
+  max-width: 900px;
   animation: fadeInUp 0.8s ease-out;
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 40px 20px;
   position: relative;
+  padding: 100px 0px
 }
 
 .profile__label {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeIn 0.6s ease-out 0.2s forwards;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 10px 40px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.profile__label::after {
+  content: "";
+  display: block;
+  position: flex;
+  top: -5px;
+  width: 200px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: grey;
+}
+
+.profile__content {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
 }
 
 .profile__title {
@@ -31,19 +46,10 @@
   animation: fadeIn 0.6s ease-out 0.4s forwards;
 }
 
-.profile__content {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  text-align: left;
-  opacity: 0;
-  animation: fadeIn 0.6s ease-out 0.6s forwards;
-  position: relative;
-}
-
 .profile__image {
-  width: 120px;
-  height: 120px;
+  box-sizing: inherit;
+  width: 200px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid grey;
@@ -60,14 +66,12 @@
 
 .profile__text {
   flex: 1;
-  color: #b8b8b8;
+  color: black;
   font-size: 18px;
   line-height: 1.6;
   font-weight: 300;
-  margin-left: -25px;
-  padding-left: 35px;
   position: relative;
-  margin-bottom: 0;
+  padding:
 }
 
 .highlight {
@@ -114,6 +118,32 @@
     width: 100px;
     height: 100px;
   }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  padding: 0;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.skills li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.skills li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
 }
 
 /* Animations */

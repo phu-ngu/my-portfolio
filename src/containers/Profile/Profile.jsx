@@ -2,28 +2,43 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import profileImage from '../../assets/images/profilepic.jpg'
 import './Profile.css';
-import { SkillBar } from '../../components'
 
 export default function Profile() {
   return (
     <section id="about" className="profile">
-      <div className="profile__label">About me</div>
-      {/* <h1 className='profile__title'>Let me introduce myself.</h1> */}
-
+      <h2 className="profile__label">About me</h2>
       <div className='profile__content'>
-        <img src={profileImage} alt="Profile Picture" className="profile__image"/>
-        <p className="profile__text">
-          I'm an engineer passionate about using software development practice to solve life sciences problems. 
-          I'm a UC Irvine class of 2019 B.S. in Pharmaceutical Sciences and working towards
-           M.S. in Bioinformations Software Development Specialization. My primary interest is data engineering, gene therapy, 
-          and my list of interests in the space is constantly growing.
-        </p>
+        <div>
+          <div className="profile__text">
+            <p>
+              I'm an engineer passionate about using software development practice to solve challenges in the life sciences field. 
+              I graudated with a B.S. in Pharmaceutical Sciences from UC Irvine and currently pusrsuing an M.S. in Bioinformatics with a specialization in
+              Software Development. My interest in software development has evolved from data science when I decided to create small applications. 
+            </p>
+            <p>
+              Up to this day, I've had the privelege of working at start-up and huge coorporation in Biohub space. 
+              My main focus was to build accessible solutions such as scripts, desktop applications, and robotics
+            </p>
+            <p>
+              A few of the tecnologies I've been working on:
+            </p>
+          </div>
+          <div>
+            <ul className='skills'>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>React/CSS/HTML</li>
+              <li>Node.js</li>
+              <li>Customtkinter</li>
+            </ul>
+          </div>
+        </div>
+        <img src={profileImage} alt="ProfilePic" className="profile__image"/>
       </div>
 
       <div className='profile__scroll-indicator'>
         <ChevronDown className='profile__scroll-icon'/>
       </div>
-      <SkillBar skill="Python" percentage={85} />
     </section>
   );
 }
