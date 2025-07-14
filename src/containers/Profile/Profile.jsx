@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import profileImage from '../../assets/images/profilepic.jpg'
 import './Profile.css';

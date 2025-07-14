@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { projectsData } from '../../data/projectsData';
 import './ProjectsSection.css';
@@ -13,22 +12,17 @@ export default function ProjectsSection() {
             Software Projects
           </h2>
           <p className="projects-section__description">
-            Projects I've worked on!
+            Some Things I've Built
           </p>
         </div>
-        
         <div className="projects-section__grid">
           {projectsData.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>
-
       <div className='projects-section__scroll-indicator'>
         <ChevronDown className='projects-section__scroll-icon'/>
-      </div>
-      <div>
-        
       </div>
     </section>
   );

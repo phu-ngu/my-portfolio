@@ -1,4 +1,3 @@
-import React from 'react';
 import ContactLinks from '../../components/ContactLinks/ContactLinks';
 import './ContactSection.css';
 

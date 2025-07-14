@@ -10,11 +10,8 @@
 }
 
 .navigation-container {
-  max-width: 72rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .navigation-content {
@@ -24,12 +21,8 @@
 }
 
 .navigation-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  background: linear-gradient(to right, #2563eb, #059669);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  width: 5%;
+  height: auto;
 }
 
 .navigation-links {
@@ -58,7 +51,12 @@
   border-bottom: 2px solid #2563eb;
 }
 
-.navigation-logo {
-  height: auto;
-  width: 10%;
+.resume-button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.resume-button:hover {
+
 }

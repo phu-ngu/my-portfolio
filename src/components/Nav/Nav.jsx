@@ -1,4 +1,3 @@
-import React from 'react';
 import './Nav.css';
 import logo from '../../assets/images/logo_pn_black_200x200.png';
 
@@ -7,9 +6,9 @@ export default function Navigation({ activeSection, scrollToSection }) {
     <nav className="navigation">
       <div className="navigation-container">
         <div className="navigation-content">
+          <img src={logo} alt='logo' className='navigation-logo'/>
           <div className="navigation-links">
-            <img src={logo} alt='logo' className='navigation-logo'/>
-            {['home', 'about', 'projects', 'contact'].map((section) => (
+            {['home', 'about', 'projects', 'experience', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -20,6 +19,13 @@ export default function Navigation({ activeSection, scrollToSection }) {
                 {section}
               </button>
             ))}
+            <a 
+              href="/resume.pdf" // path to file
+              download="resume_PN2025.pdf" // Filename for download
+              className='resume-button'
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>

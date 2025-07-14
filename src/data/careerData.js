@@ -8,12 +8,12 @@ export const careerData = [
     title: "Freelance Developer",
     period: "2024 - Present",
     company: "Independent",
-    description: "Developed scalable web applications using React and Node.js. Implemented RESTful APIs and optimized database queries, improving application performance by 25%."},
+    description: "Providing full-stack development services to clients, focusing on custom web solutions and application development"},
   {
     title: "Automation Engineer",
     period: "Nov 2024 - Apr 2025",
     company: "Foundation Medicine",
-    description: "Developed and maintained automation scripts for genomic data processing pipelines, improving efficiency by 30%. Collaborated with cross-functional teams to integrate new technologies."},
+    description: "Built and deployed python and react applications to reafactor and modularize the liquid handler codebase"},
   {
     title: "Lab Automation Engineer Contractor",
     period: "2022 - 2024",
