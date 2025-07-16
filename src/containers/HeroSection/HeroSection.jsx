@@ -8,7 +8,10 @@ export default function HeroSection({ scrollToSection }) {
       
       <div className="hero-section__content">
         <h1 className="hero-section__title">
-          Hi, I'm Phu Nguyen
+          Hi, I'm
+        </h1>
+        <h1 className="hero-section__title">
+          Phu Nguyen
         </h1>
         <p className="hero-section__subtitle">
           Automation & Data Engineer | Software Developer

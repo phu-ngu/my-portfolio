@@ -22,7 +22,7 @@
 }
 
 .profile__label::after {
-  content: "";
+  content:'';
   display: block;
   position: flex;
   top: -5px;

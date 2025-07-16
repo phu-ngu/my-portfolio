@@ -21,7 +21,6 @@ export const projectsData = [
     title: "Hamilton's Robotics Metadata Web Application",
     description: "A web application to display Hamilton's Metadata in a user-friendly format, allowing for easy access and management of labware information.",
     tech: ["Web Development", "React.js", "Data Visualization"],
-    image: "",
     link: "#"
   },
   {

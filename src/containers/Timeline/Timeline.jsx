@@ -2,39 +2,33 @@ import './Timeline.css';
 import { careerData } from '../../data/careerData';
 
 export default function Timeline() {
-    return (
-      <section id="experience" className="work-experience-section">
-        <div className="container">
-          <div className="header">
-            <h2 className="title">
-              Work Experience
-            </h2>
-          </div>
-          
-          <div className="timeline-container">
-            {/* Timeline line */}
-            <div className="timeline-line"></div>
-            
-            <div className="timeline-items">
-              {careerData.map((job, index) => (
-                <div key={index} className="timeline-item">
-                  {/* Timeline dot */}
-                  <div className="timeline-dot"></div>
-                  {/* Content */}
-                  <div className="content-wrapper">
-                    <div className="content-card">
-                      <h3 className="job-title">{job.title}</h3>
-                      <p className="job-period">{job.period}</p>
-                      <div className="separator"></div>
-                      <h4 className="company-name">{job.company}</h4>
-                      <p className="job-description">{job.description}</p>
-                    </div>
-                  </div>
+  return (
+    <section id="experience">
+      <div className='resume'>
+        <div className='resume-header'>
+          <h2>Work Experience</h2>
+          <div className='header-underline'></div>
+        </div>
+        <div className='resume-container'>
+          <div className='timeline-wrap'>
+            {careerData.map((job, index) => (
+              <div key={index} className='timeline-block'>
+                <div className='timeline-ico'>
+                  <i className='fa fa-briefcase'></i>
                 </div>
-              ))}
-            </div>
+                <div className='timeline-header'>
+                  <h3 className='timeline-header__position'>{job.title}</h3>
+                  <h3 className='timeline-header__period'>{job.period}</h3>
+                </div>
+                <div className='timeline-content'>
+                  <h4 className='job-description__co'>{job.company}</h4>
+                  <div className='job-description'>{job.description}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

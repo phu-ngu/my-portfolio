@@ -16,7 +16,7 @@ export default function Profile() {
             </p>
             <p>
               Up to this day, I've had the privelege of working at start-up and huge coorporation in Biohub space. 
-              My main focus was to build accessible solutions such as scripts, desktop applications, and robotics
+              My primary focus these days is to build accessible solutions such as scripts, desktop applications, and code that communicates with robotics systems.
             </p>
             <p>
               A few of the tecnologies I've been working on:

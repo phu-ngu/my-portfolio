@@ -55,9 +55,8 @@
   padding: 10px 20px;
   border: 2px solid black;
   border-radius: 2px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  transition: background-color ease 0.3s;
 }
 .resume-button:hover {
-  box-shadow: 0 10px 20px #2563eb;
-  transform: translateY(-3px)
+  background-color: grey;
 }
