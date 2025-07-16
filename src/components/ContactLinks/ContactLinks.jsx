@@ -19,7 +19,7 @@ const contactLinks = [
     icon: Linkedin,
     title: "Linkedin",
     value: 'Phu Nguyen',
-    href: 'https://linkedin.com'
+    href: 'https://linkedin.com/phu-nguyen21'
   }
 ];
 
