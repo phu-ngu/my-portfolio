@@ -1,6 +1,6 @@
 {
   "homepage": "https://phu-ngu.github.io/portfolioV1/",
-  "name": "Phu Ngu's Website",
+  "name": "phu-ngu-portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
