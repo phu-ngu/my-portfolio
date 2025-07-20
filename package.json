@@ -1,7 +1,7 @@
 {
-  "homepage": "https://phu-ngu.github.io/my-portfolio/",
-  "name": "my-portfolio",
-  "version": "1.1.0",
+  "homepage": "https://phu-ngu.github.io/portfolioV1/",
+  "name": "Phu Ngu's Website",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",

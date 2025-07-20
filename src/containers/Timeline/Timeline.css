@@ -2,6 +2,7 @@
   max-width: 980px;
   margin: 0 auto;
   padding: 40px 20px;
+  display: flex;
 }
 
 .resume-header {
@@ -61,15 +62,16 @@
 .timeline-ico {
   height: 3rem;
   width: 3rem;
-  line-height: 5.5rem;
   background: black;
   border-radius: 50%;
   position: absolute;
   left: 35%;
   top: 1.5rem;
   margin-left: -2.75rem;
-
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-ico:hover {
@@ -97,7 +99,7 @@
 }
 
 .timeline-header__period {
-  color: grey
+  color: grey;
 }
 
 .timeline-content {
@@ -129,33 +131,64 @@
   margin-bottom: 10px;
 }
 
+.fa-briefcase::before {
+  color: rgb(210, 216, 216);
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
+  .resume {
+    padding: 20px 10px;
+  }
+
   .timeline-wrap::before {
-    left: 30px;
+    left: 20px;
+    top: 1.5rem;
+    height: calc(100% - 1.5rem);
   }
-  
+
   .timeline-ico {
-    left: 30px;
-    margin-left: -2.75rem;
+    left: 20px;
+    margin-left: -1.5rem;
   }
-  
+
   .timeline-header {
     float: none;
-    width: 100%;
+    width: auto;
     text-align: left;
     padding-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    padding-left: 80px;
+    font-size: 1.2rem;
   }
-  
+
   .timeline-content {
     margin-left: 0;
     padding-left: 80px;
+    padding-right: 10px;
   }
-}
 
-.fa-briefcase::before {
-  color: rgb(210, 216, 216);
-  position: relative;
-  left: 16px;
-  top: -18px;
+  .timeline-block {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline-header h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .timeline-header__position,
+  .timeline-header__period,
+  .job-description {
+    font-size: 0.95rem;
+  }
+
+  .job-description__co {
+    font-size: 1.1rem;
+  }
+
+  .timeline-ico {
+    line-height: 3rem;
+  }
 }

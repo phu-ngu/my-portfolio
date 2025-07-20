@@ -5,11 +5,11 @@ export default function Timeline() {
   return (
     <section id="experience">
       <div className='resume'>
-        <div className='resume-header'>
-          <h2>Work Experience</h2>
-          <div className='header-underline'></div>
-        </div>
         <div className='resume-container'>
+          <div className='resume-header'>
+          <h2 className='resume_header'>Work Experience</h2>
+          <div className='header-underline'></div>
+          </div>
           <div className='timeline-wrap'>
             {careerData.map((job, index) => (
               <div key={index} className='timeline-block'>
