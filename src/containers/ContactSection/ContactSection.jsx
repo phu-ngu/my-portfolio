@@ -13,7 +13,6 @@ export default function ContactSection() {
         </p>
         
         <ContactLinks />
-        {/* <ContactForm /> */}
       </div>
     </section>
   );

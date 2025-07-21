@@ -1,8 +1,5 @@
-/* --- Your Navigation Base Styles (Desktop and shared styles) --- */
 .navigation {
-  /* position: fixed; <--- Consider making this relative for now, if it causes content overlap issues below the nav. */
-  /* If you want it fixed, ensure your main content has padding-top equal to nav height */
-  position: fixed; /* Keeping fixed as per your original request */
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 50;
@@ -10,39 +7,39 @@
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(229, 231, 235, 0.5);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  min-height: 60px; /* Ensure a minimum height so content doesn't get squished */
-  display: flex; /* Ensure navigation itself is a flex container for centering content */
-  align-items: center; /* Vertically center content in the nav bar */
+  min-height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-container {
   margin: 0 auto;
-  padding: 0 1.5rem; /* Consistent padding for desktop. Will be adjusted for mobile. */
-  width: 100%; /* Ensure container takes full width of nav */
+  padding: 0 1.5rem;
+  width: 100%;
 }
 
 .navigation-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow content inside to wrap if needed (e.g., logo + links) */
+  flex-wrap: wrap;
 }
 
 .navigation-logo {
-  width: 5%; /* Keep percentage for larger screens */
-  min-width: 80px; /* Ensure it's not too small on desktop */
+  width: 5%;
+  min-width: 80px;
   height: auto;
   display: block;
 }
 
 .navigation-links {
   display: flex;
-  gap: 2rem; /* Standard gap for desktop */
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: nowrap; /* Prevent wrapping on desktop, enforce with media query */
-  align-items: center; /* Vertically align individual links */
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .navigation-link {
@@ -56,7 +53,7 @@
   font-size: 1rem;
   position: relative;
   text-decoration: none;
-  white-space: nowrap; /* Prevent link text from wrapping */
+  white-space: nowrap;
 }
 
 .navigation-link:hover {
@@ -75,52 +72,50 @@
   transition: background-color ease 0.3s;
   text-decoration: none;
   color: black;
-  white-space: nowrap; /* Prevent button text from wrapping */
+  white-space: nowrap;
 }
+
 .resume-button:hover {
   background-color: grey;
   color: white;
 }
 
-/* --- Mobile Responsive Styles --- */
 @media (max-width: 768px) {
   .navigation-container {
-    padding: 0 0.75rem; /* Reduced padding for smaller screens */
+    padding: 0 0.75rem;
   }
 
   .navigation-logo {
-    width: 60px; /* Smaller fixed width for logo on mobile */
-    min-width: unset; /* Remove min-width from desktop */
+    width: 60px;
+    min-width: unset;
   }
 
   .navigation-content {
-    /* If the logo and links don't fit on one line, wrap them */
     flex-wrap: wrap;
-    justify-content: center; /* Center items when they wrap */
-    padding: 0.5rem 0; /* Add some vertical padding to the content area itself */
+    justify-content: center;
+    padding: 0.5rem 0;
   }
 
   .navigation-links {
-    gap: 0.5rem; /* Much smaller gap for mobile links */
-    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-    justify-content: center; /* Center the links when they wrap */
-    width: 100%; /* Take full width to allow wrapping properly */
-    margin-top: 0.5rem; /* Add some space between logo/button and wrapped links */
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
   }
 
   .navigation-link {
-    font-size: 0.85rem; /* Smaller font size for mobile links */
-    padding: 0.3rem 0.4rem; /* Reduced padding to make links fit */
+    font-size: 0.85rem;
+    padding: 0.3rem 0.4rem;
   }
 
   .resume-button {
-    padding: 8px 15px; /* Smaller padding for button on mobile */
-    font-size: 0.85rem; /* Smaller font size for button */
-    margin-left: 0.5rem; /* Reduced margin from links */
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
   }
 }
 
-/* --- Keep Your Existing Animations (unchanged) --- */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
