@@ -27,7 +27,7 @@ export const projectsData = [
   },
   {
     title: "Form Request App",
-    description: "A web application for managing form requests, allowing client users to submit problems to the Automation team.",
+    description: "A desktop application for managing form requests, allowing client users to submit problems to the Automation team.",
     tech: ["Full Stack", "React.js", "Node.js", "Express.js"],
     image: form_img,
     link: "#"

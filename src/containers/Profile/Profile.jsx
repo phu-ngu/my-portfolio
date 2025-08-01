@@ -11,7 +11,7 @@ export default function Profile() {
           <div className="profile__text">
             <p>
               I'm an engineer passionate about using software development practice to solve challenges in the life sciences field. 
-              I graudated with a B.S. in Pharmaceutical Sciences from UC Irvine and currently pusrsuing an M.S. in Bioinformatics with a specialization in
+              I graduated with a B.S. in Pharmaceutical Sciences from UC Irvine and currently pursuing an M.S. in Bioinformatics with a specialization in
               Software Development. My interest in software development has evolved from data science when I decided to create small applications. 
             </p>
             <p>
