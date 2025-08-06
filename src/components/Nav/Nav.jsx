@@ -1,6 +1,6 @@
 import './Nav.css';
 import logo from '../../assets/images/logo_pn_black_200x200.png';
-import resume_pdf from '../../assets/files/resume_PN2025.pdf'
+import resume_pdf from '../../assets/files/resume_PN2025_c.pdf'
 
 export default function Navigation({ activeSection, scrollToSection }) {
   return (

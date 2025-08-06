@@ -10,16 +10,17 @@ export default function Profile() {
         <div>
           <div className="profile__text">
             <p>
-              I'm an engineer passionate about using software development practice to solve challenges in the life sciences field. 
-              I graduated with a B.S. in Pharmaceutical Sciences from UC Irvine and currently pursuing an M.S. in Bioinformatics with a specialization in
-              Software Development. My interest in software development has evolved from data science when I decided to create small applications. 
+              I'm an engineer passionate about using software development practice to solve challenges. 
+              I graduated with a B.S. in Pharmaceutical Sciences from UC Irvine and recently received a Certificate in Bioinformatics with some focus in software development.
+              My interest include web and backend development, as well as automating data pipelines.
             </p>
             <p>
-              Up to this day, I've had the privelege of working at start-up and huge coorporation in Biohub space. 
-              My primary focus these days is to build accessible solutions such as scripts, desktop applications, and code that communicates with robotics systems.
+              Up to this day, I've had the privelege of working at start-up and huge coorporation in the Biohub space. 
+              My primary focus these days is to build accessible solutions on outdated processes using such as writing scripts, developing
+              desktop applications, and creating integration for robotic system.
             </p>
             <p>
-              A few of the tecnologies I've been working on:
+              A few of the tecnologies I've been working with:
             </p>
           </div>
           <div>
