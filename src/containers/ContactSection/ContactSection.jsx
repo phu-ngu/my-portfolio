@@ -6,10 +6,10 @@ export default function ContactSection() {
     <section id="contact" className="contact-section">
       <div className="contact-section__container">
         <h2 className="contact-section__title">
-          Let's Connect!
+          Links
         </h2>
         <p className="contact-section__description">
-          Currently, I have a job, but am open to a new software engineering opportunities.
+          Currently, I have a job, but am open to other engineering opportunities.
         </p>
         
         <ContactLinks />
