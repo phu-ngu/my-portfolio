@@ -1,9 +1,9 @@
 export const careerData = [
   {
-    title: "Automation Engineer & Developer",
+    title: "Lab Automation Engineer | Developer",
     period: "June - Present",
     company: "Sanofi",
-    description: "Developed full stack web applications for lab automation, integrating Python and JavaScript technologies. Improved data processing efficiency by 40% through automation of laboratory workflows."},
+    description: "Crafting custom software solutions and internal tooling to elevate R&D engineering workflows. Continuously driving measurable improvements in liquid handling efficiency and laboratory data management."},
   {
     title: "Freelance Developer",
     period: "2024 - Present",

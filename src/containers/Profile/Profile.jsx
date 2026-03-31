@@ -11,13 +11,13 @@ export default function Profile() {
           <div className="profile__text">
             <p>
               I'm an engineer passionate about using software development practice to solve challenges. 
-              I graduated with a B.S. in Pharmaceutical Sciences from UC Irvine and recently received a Certificate in Bioinformatics with some focus in software development.
-              My interest include web and backend development, as well as automating data pipelines.
+              I graduated with a B.S. in Pharmaceutical Sciences from UC Irvine and recently received a Certificate in Bioinformatics with some focus in software development and data engineering.
+              My interest include full-stack development, as well as ochestrating data pipelines and building custom solutions.
             </p>
             <p>
               Up to this day, I've had the privelege of working at start-up and huge coorporation in the Biohub space. 
-              My primary focus these days is to build accessible solutions on outdated processes using such as writing scripts, developing
-              desktop applications, and creating integration for robotic system.
+              My primary focus these days is to build accessible custom solutions on outdated processes using such as writing scripts, developing
+              web or desktop applications, and creating integration for robotic system.
             </p>
             <p>
               A few of the tecnologies I've been working with:
@@ -28,8 +28,10 @@ export default function Profile() {
               <li>Python</li>
               <li>Javascript</li>
               <li>React/CSS/HTML</li>
-              <li>Node.js</li>
-              <li>Customtkinter</li>
+              <li>NodeJS</li>
+              <li>Cloud Computing</li>
+              {/* <li>Airflow3</li> */}
+              <li>AI prompting (OpenAI, Gemini, Ollama)</li>
             </ul>
           </div>
         </div>

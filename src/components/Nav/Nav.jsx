@@ -1,6 +1,6 @@
 import './Nav.css';
 import logo from '../../assets/images/logo_pn_black_200x200.png';
-import resume_pdf from '../../assets/files/resume_PN2025.pdf'
+import resume_pdf from '../../assets/files/resumePN.pdf'
 
 export default function Navigation({ activeSection, scrollToSection }) {
   return (
@@ -22,7 +22,7 @@ export default function Navigation({ activeSection, scrollToSection }) {
             ))}
             <a 
               href={resume_pdf} // path to file
-              download="resume_PN2025.pdf" // Filename for download
+              download="resumePN.pdf" // Filename for download
               className='resume-button'
             >
               Resume
