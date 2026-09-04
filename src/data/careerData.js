@@ -15,7 +15,7 @@ export const careerData = [
     company: "Foundation Medicine Inc.",
     description: "Built and deployed python and react applications to reafactor and modularize the liquid handler codebase"},
   {
-    title: "Lab Automation Engineer",
+    title: "Lab Automation Engineer (Contractor)",
     period: "2022 - 2024",
     company: "Sanofi",
     description: "Designed and implemented automated workflows for high-throughput screening assays, reducing manual intervention by 50%. Enhanced data accuracy and reproducibility in experimental processes."},

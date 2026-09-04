@@ -3,6 +3,8 @@ import website_img from '../assets/images/website.png'
 import rename_img from '../assets/images/rename_hamilton.png'
 import ham_metadata_img from '../assets/images/react_ham.png'
 import airflow_DAGDiagram_img from '../assets/images/airflow_DAGDiagram.png'
+import venus_grafana_img from '../assets/images/venus_grafana_dashboard.png'
+import homelab_img from '../assets/images/homelab_kubernetes.png'
 
 export const projectsData = [
   {
@@ -36,5 +38,19 @@ export const projectsData = [
     tech: ["Airflow3", "Pyspark", "Google Cloud Storage", "DAGs", "BigQuery", "dbt"],
     image: airflow_DAGDiagram_img,
     link: "https://github.com/phu-ngu/airflow-ecommerce-pipeline"
+  },
+  {
+    title: "Self-hosted Kubernetes HomeLab",
+    description: "A self-hosted Kubernetes homelab with GitOps (ArgoCD), CI/CD (Jenkins), and full-stack observability (Prometheus, Loki, Grafana), hosting personal services like game servers, media storage, and a private cloud drive.",
+    tech: ["K8s", "ArgoCd", "Jenkins CI/CD", "Grafana", "Prometheus", "Loki", "HomeAssistant", "Kubernetes"],
+    image: homelab_img,
+    link: ""
+  },
+  {
+    title: "Grafana Monitoring Tool for Hamilton Venus Robots",
+    description: "Designed a real-time monitoring system to track metrics, traces, and logs onto a provisioned dashboard",
+    tech: ["Redhat OpenShift", "Grafana", "Prometheus", "Loki", "FastAPI", "K8s"],
+    image: venus_grafana_img,
+    link: ""
   },
 ];
