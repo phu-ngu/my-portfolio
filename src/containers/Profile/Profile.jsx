@@ -17,8 +17,8 @@ export default function Profile() {
             <p>
               Up to this day, I've had the privelege of working at start-up and huge coorporation in the Biohub space. 
               My primary focus these days is to build accessible custom solutions on outdated processes using such as writing scripts, developing
-              web or desktop applications, and creating integration for robotic system. Recently been working on designing monitoring stack systems in 
-              in OpenShift Kubernetes.
+              web or desktop applications, and creating integration for robotic system. Recently been working on designing monitoring stack systems for robotic systems in 
+              OpenShift Kubernetes.
             </p>
             <p>
               A few of the tecnologies I've been working with:
@@ -32,7 +32,7 @@ export default function Profile() {
               <li>NodeJS</li>
               <li>Cloud Computing</li>
               <li>Airflow3</li>
-              <li>Kubernetes | DevOps</li>
+              <li>Kubernetes | DevOps | Terraform</li>
             </ul>
           </div>
         </div>
